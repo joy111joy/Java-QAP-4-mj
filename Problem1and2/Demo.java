@@ -17,7 +17,7 @@ public class Demo {
             System.out.println(shape);
         }
 
-        scaleShapes(shapes, 2);
+        scaleShapes(shapes, 3);
 
         System.out.println("\nPost scaling:");
 
