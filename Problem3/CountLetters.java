@@ -21,13 +21,14 @@ String word = scan.nextLine( );
 word = word.toUpperCase( );
 
 //count frequency of each letter in string
-// Count frequency of each letter in string
 for (int i = 0; i < word.length(); i++) {
+    //try-catch block to handle non-letter characters
     try {
         char ch = word.charAt(i);
         counts[ch - 'A']++;
     } catch (ArrayIndexOutOfBoundsException e) {
         char ch = word.charAt(i);
+        //if statement to determine if unknown character is a space or not and to print it as "SPACE for ease of reading"
         if (ch == ' ') {
             System.out.println("Not a letter: space");
         }

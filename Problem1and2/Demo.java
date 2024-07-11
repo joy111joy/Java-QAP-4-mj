@@ -7,6 +7,7 @@ public class Demo {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[4];
         
+        //creating shapes
         shapes[0] = new Ellipse("Ellipse", 3, 5);
         shapes[1] = new Circle("Circle", 7);
         shapes[2] = new Triangle("Triangle", 3, 4, 5);
@@ -17,6 +18,7 @@ public class Demo {
             System.out.println(shape);
         }
 
+        //scaling shapes
         scaleShapes(shapes, 3);
 
         System.out.println("\nPost scaling:");
